@@ -14,6 +14,6 @@ export default defineConfig({
     outDir: "build"
   },
   optimizeDeps: {
-    include: ['@testing-library/react', 'expect'],
+    include: ['@testing-library/react', 'expect', '@testing-library/jest-dom'],
   },
 });

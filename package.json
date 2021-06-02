@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "wtr --playwright --browsers chromium"
+    "test": "wtr --playwright --browsers chromium",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -19,6 +20,7 @@
     "@web/test-runner": "0.13.5",
     "@web/test-runner-playwright": "^0.8.6",
     "expect": "27.0.2",
+    "patch-package": "^6.4.7",
     "rollup-plugin-polyfill-node": "^0.6.2",
     "vite": "^2.3.5",
     "vite-web-test-runner-plugin": "0.0.3"

@@ -10,6 +10,7 @@ module.exports = {
       window.__vite_plugin_react_preamble_installed__ = true;
       window.global = window;
     </script>
+    <script type="module" src="/test-setup/globals.js"></script>
     <script id='uit' type="module" src="${testFramework}"></script>
     </body>
   </html>`

@@ -2,4 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 
-ReactDOM.render(<h1>Hai</h1>, document.getElementById("app"));
+export const App = () => {
+  return (
+    <h1>Hai</h1>
+  )
+}
+
+ReactDOM.render(<App/>, document.getElementById("app"));

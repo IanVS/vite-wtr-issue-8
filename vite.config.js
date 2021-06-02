@@ -10,8 +10,10 @@ export default defineConfig({
   plugins: [reactRefresh(), nodePolyfills()],
   cacheDir: "node_modules/.cache/vite",
   mode: IS_TESTING ? "test" : undefined,
-  logLevel: "silent",
   build: {
     outDir: "build"
-  }
+  },
+  optimizeDeps: {
+    include: ['@testing-library/react', 'expect'],
+  },
 });
